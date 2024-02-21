@@ -6,7 +6,7 @@ import logo from "../Imgs/logo_2.PNG";
 
 function Navbar() {
   return (
-    <navbar className={classes["navbar"]}>
+    <nav className={classes["navbar"]}>
       <NavLink to="/" className={classes["navbar_logoContainer"]}>
         <img
           className={classes["navbar_logoContainer--logo"]}
@@ -25,7 +25,7 @@ function Navbar() {
           <NavLink to="/">Kontakt</NavLink>
         </li>
       </ul>
-    </navbar>
+    </nav>
   );
 }
 
