@@ -1,0 +1,93 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgb(6, 57, 112, 0.8),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../Imgs/header_background_1.jpg) no-repeat right/cover;
+}
+
+header .text-box {
+  position: relative;
+  margin-top: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 60rem;
+  height: 30rem;
+  padding: 2rem 1rem;
+  border-radius: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+header .text-box::before,
+header .text-box::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 30rem;
+  height: 3rem;
+  background-color: yellow;
+  transform: rotate(45deg);
+}
+
+header .text-box::before {
+  bottom: 5rem;
+  left: -10rem;
+}
+
+header .text-box::after {
+  top: 5rem;
+  right: -10rem;
+}
+
+header .text-box h1,
+header .text-box h1 span {
+  font-size: 10rem;
+  line-height: 1;
+  color: #fff;
+  font-family: "Anta", sans-serif;
+}
+
+header .text-box h1 span {
+  color: yellow;
+}
+
+header .text-box h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0 auto 1rem auto;
+}
+
+header .text-box p {
+  font-size: 1.75rem;
+  color: #fff;
+  font-style: italic;
+  text-align: center;
+}
+
+header .text-box button {
+  margin-top: 2.75rem;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: "Anta", sans-serif;
+  padding: 1rem 2.5rem;
+  color: #000;
+  background-color: #ffff4d;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+header .text-box button:hover {
+  font-size: 2.25rem;
+  padding: 1.25rem 3rem;
+  box-shadow: 0 1rem 2rem #000;
+}
