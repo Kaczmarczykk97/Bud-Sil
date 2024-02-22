@@ -1,0 +1,54 @@
+.companiesBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 0 6rem 0;
+  width: 100%;
+  margin: 10rem auto;
+  background-color: rgba(6, 57, 112, 0.8);
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.6);
+}
+
+.companiesBox .headingBox {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1.5rem 2rem;
+  width: 100%;
+  margin-bottom: 6rem;
+}
+
+.companiesBox .headingBox h2 {
+  font-size: 3.75rem;
+  color: #fff;
+  text-align: center;
+  font-family: "Anta", sans-serif;
+}
+
+.companiesBox .headingBox hr {
+  height: 2px;
+  background-color: #fff;
+  width: 50%;
+  margin: 1rem auto;
+}
+
+.companies_imgs--wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 5rem;
+}
+
+.companies_imgs--wrapper img {
+  width: 100%;
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+
+.companies_imgs--wrapper img:hover {
+  filter: grayscale(0);
+  transform: translateY(-0.5rem);
+}

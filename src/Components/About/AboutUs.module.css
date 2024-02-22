@@ -1,0 +1,99 @@
+.aboutUsBox {
+  margin-bottom: 10rem;
+}
+
+.aboutUsBox .headingBox {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1.5rem 2rem;
+  width: 100%;
+  margin-bottom: 6rem;
+}
+
+.aboutUsBox .headingBox h2 {
+  font-size: 3.75rem;
+  color: #fff;
+  text-align: center;
+  font-family: "Anta", sans-serif;
+}
+
+.aboutUsBox .headingBox hr {
+  height: 2px;
+  background-color: #fff;
+  width: 50%;
+  margin: 1rem auto;
+}
+
+.aboutUsWrapper--experience {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 10rem 0 5rem;
+}
+
+.aboutUsWrapper--experience-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background-color: rgba(6, 57, 112, 0.8);
+  padding: 2rem;
+  border-radius: 2rem;
+  max-width: 52.5rem;
+  margin: 0 auto;
+  box-shadow: 0 0 2rem #000;
+}
+
+.experience-bullet {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+}
+
+.experience-bullet p {
+  font-size: 1.75rem;
+  color: #fff;
+  font-family: "Anta", sans-serif;
+}
+
+.experience-iconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  background-color: tomato;
+  box-shadow: 0 0 0.4rem #fff;
+}
+
+.experience-icon {
+  font-size: 3.15rem;
+  color: #fff;
+}
+
+.aboutUsWrapper--experience-img {
+  width: 100%;
+  position: relative;
+}
+
+.aboutUsWrapper--experience-img::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 35rem;
+  height: 35rem;
+  border-radius: 50%;
+  background-color: rgba(6, 57, 112, 0.8);
+  z-index: -1;
+  box-shadow: 0 0 1rem rgba(6, 57, 112, 0.8);
+}
