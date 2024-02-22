@@ -1,6 +1,7 @@
 import Header from "../Header/Header";
 import Companies from "../Companies/Companies";
 import AboutUs from "../About/AboutUs";
+import Testimonials from "../Testimonials/Testimonials";
 
 import classes from "./MainPage.module.css";
 
@@ -10,6 +11,7 @@ function MainPage() {
       <Header />
       <Companies />
       <AboutUs />
+      <Testimonials />
     </div>
   );
 }

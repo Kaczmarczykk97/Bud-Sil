@@ -1,5 +1,6 @@
 .aboutUsBox {
   margin-bottom: 10rem;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.6);
 }
 
 .aboutUsBox .headingBox {
@@ -17,6 +18,7 @@
   color: #fff;
   text-align: center;
   font-family: "Anta", sans-serif;
+  text-shadow: 2px 2px #000;
 }
 
 .aboutUsBox .headingBox hr {
@@ -25,6 +27,8 @@
   width: 50%;
   margin: 1rem auto;
 }
+
+/*******************aboutUsWrapper--experience********************/
 
 .aboutUsWrapper--experience {
   display: grid;
@@ -44,7 +48,7 @@
   border-radius: 2rem;
   max-width: 52.5rem;
   margin: 0 auto;
-  box-shadow: 0 0 2rem #000;
+  box-shadow: 0 0 2rem rgba(6, 57, 112, 0.8);
 }
 
 .experience-bullet {
@@ -94,6 +98,85 @@
   height: 35rem;
   border-radius: 50%;
   background-color: rgba(6, 57, 112, 0.8);
-  z-index: -1;
   box-shadow: 0 0 1rem rgba(6, 57, 112, 0.8);
+  z-index: -1;
+}
+
+/*******************aboutUsWrapper--services********************/
+.aboutUsWrapper--services {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+  padding: 5rem 7.5rem;
+  gap: 5rem;
+  background-color: rgba(6, 57, 112, 0.8);
+}
+
+.aboutUsWrapper--services .aboutUsWrapper--services-crew {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 0 1.5rem #000;
+}
+
+.aboutUsWrapper--services .aboutUsWrapper--services-crew img {
+  width: 47.5rem;
+  margin: 0 auto 0.75rem auto;
+  box-shadow: 0 0.5rem 1rem #000;
+  transition: all 0.3s;
+}
+
+.aboutUsWrapper--services .aboutUsWrapper--services-crew img:hover {
+  transform: scale(1.1);
+}
+
+.aboutUsWrapper--services .aboutUsWrapper--services-crew p {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1.25rem 2rem 1rem 2rem;
+}
+
+.aboutUsWrapper--services-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.aboutUsWrapper--service-box--row {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.service-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  min-width: 27.5rem;
+  max-width: 35rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem #000;
+}
+
+.service-box img {
+  width: 100%;
+  transition: all 0.3s;
+  filter: brightness(60%);
+}
+
+.service-box img:hover {
+  transform: scale(1.1);
+  filter: brightness(100%);
+}
+
+.service-box p {
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 1rem;
 }
