@@ -3,6 +3,7 @@ import Companies from "../Companies/Companies";
 import AboutUs from "../About/AboutUs";
 import Testimonials from "../Testimonials/Testimonials";
 import Advantages from "../Advantages/Advantages";
+import Location from "../Location/Location";
 
 import classes from "./MainPage.module.css";
 
@@ -14,6 +15,7 @@ function MainPage() {
       <AboutUs />
       <Testimonials />
       <Advantages />
+      <Location />
     </div>
   );
 }

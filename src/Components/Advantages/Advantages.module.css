@@ -7,8 +7,10 @@
   align-items: center;
   justify-content: center;
   gap: 5rem;
-  background-color: rgb(6, 57, 112);
-  margin: 10rem auto 12.5rem auto;
+  /* background-color: rgb(6, 57, 112); */
+  background-color: rgba(6, 57, 112, 0.8);
+  margin: 12.5rem auto;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.6);
 }
 
 .advantage {

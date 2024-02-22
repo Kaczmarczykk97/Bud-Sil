@@ -69,7 +69,7 @@ header .text-box p {
   text-align: center;
 }
 
-header .text-box button {
+.text-box button {
   margin-top: 2.75rem;
   font-size: 2rem;
   font-weight: 600;
@@ -82,7 +82,7 @@ header .text-box button {
   transition: all 0.4s;
 }
 
-header .text-box button:hover {
+.text-box button:hover {
   font-size: 2.25rem;
   padding: 1.25rem 3rem;
   box-shadow: 0 1rem 2rem #000;
