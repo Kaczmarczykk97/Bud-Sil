@@ -142,6 +142,26 @@
   padding: 1.25rem 2rem 1rem 2rem;
 }
 
+.aboutUsWrapper--services .aboutUsWrapper--services-crew button {
+  font-size: 1.35rem;
+  font-weight: 700;
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: yellow;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.aboutUsWrapper--services .aboutUsWrapper--services-crew button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 1rem #000;
+}
+
+.aboutUsWrapper--services .aboutUsWrapper--services-crew button .closeArr {
+  font-size: 2rem;
+}
+
 .aboutUsWrapper--services-wrapper {
   display: flex;
   flex-direction: column;
@@ -150,29 +170,76 @@
 
 .aboutUsWrapper--service-box--row {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   margin: 0 auto;
   gap: 1rem;
 }
 
 .service-box {
   background-color: rgba(0, 0, 0, 0.6);
-  min-width: 27.5rem;
-  max-width: 35rem;
+  /* min-width: 27.5rem;
+  max-width: 35rem; */
+  width: 32.5rem;
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 0.5rem 1rem #000;
+  position: relative;
+}
+
+.service-box .curtain {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(6, 57, 112, 0.8);
+  transition: all 0.3s;
+  z-index: 2;
+}
+
+.service-box:hover .curtain {
+  height: 100%;
+}
+
+.service-box .curtain button {
+  display: none;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 2rem;
+  font-family: "Anta", sans-serif;
+  cursor: pointer;
+  background-color: yellow;
+  padding: 0.5rem 1rem;
+  color: #000;
+  text-shadow: 1px 1px #fff;
+  box-shadow: 0 0.2rem 0.2rem #000;
+  border: none;
+  transition: all 0.3s;
+}
+
+.service-box .curtain button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.6rem 0.6rem #000;
+}
+
+.service-box:hover .curtain button {
+  display: flex;
+}
+
+.service-box .curtain button .curtain-arr {
+  font-size: 2.5rem;
 }
 
 .service-box img {
   width: 100%;
   transition: all 0.3s;
-  filter: brightness(60%);
 }
 
 .service-box img:hover {
   transform: scale(1.1);
-  filter: brightness(100%);
 }
 
 .service-box p {
