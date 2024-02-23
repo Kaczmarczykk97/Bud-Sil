@@ -18,7 +18,7 @@ function Footer() {
         <div className={classes["footer-contact"]}>
           <div className={classes["footer-contact--col-1"]}>
             <img src={logo} alt="Bud-Sil's logo" />
-            <p>xxxxxxx</p>
+            <p>Towarowa 6</p>
             <p>49-340 Brzeg</p>
             <p>NIP: xxxxxxxx</p>
           </div>

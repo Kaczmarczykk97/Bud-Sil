@@ -13,7 +13,7 @@ import cwu_installation_img from "../Imgs/cwu_installation.png";
 
 function AboutUs() {
   return (
-    <div className={classes["aboutUsBox"]}>
+    <div className={classes["aboutUsBox"]} id="section-about">
       <div className={classes["headingBox"]}>
         <h2>O Nas</h2>
         <hr />

@@ -16,7 +16,7 @@ function Navbar() {
       </NavLink>
       <ul>
         <li>
-          <NavLink to="/">O Nas</NavLink>
+          <a href="/#section-about">O Nas</a>
         </li>
         <li>
           <NavLink to="/">Realizacje</NavLink>

@@ -4,6 +4,7 @@ import AboutUs from "../About/AboutUs";
 import Testimonials from "../Testimonials/Testimonials";
 import Advantages from "../Advantages/Advantages";
 import Location from "../Location/Location";
+import ArrowScrollTop from "../ArrowScrollTop/ArrowScrollTop";
 
 import classes from "./MainPage.module.css";
 
@@ -16,6 +17,7 @@ function MainPage() {
       <Testimonials />
       <Advantages />
       <Location />
+      <ArrowScrollTop />
     </div>
   );
 }

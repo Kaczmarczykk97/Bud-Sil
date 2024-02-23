@@ -1,3 +1,4 @@
 .mainPageWrapper {
   overflow-x: hidden;
+  position: relative;
 }

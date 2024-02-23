@@ -17,8 +17,8 @@
 .heatPump-icon {
   position: absolute;
   top: 0;
-  right: 2.5rem;
-  width: 17.5rem;
+  right: 1.5rem;
+  width: 10rem;
   filter: brightness(0) invert(1);
 }
 
