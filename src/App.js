@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./Root";
 
 import MainPage from "./Components/MainPage/MainPage";
+import ContactPage from "./Components/ContactPage/ContactPage";
 
 import "./App.css";
 
@@ -11,7 +12,10 @@ function App() {
     {
       path: "/",
       element: <RootLayout />,
-      children: [{ path: "/", element: <MainPage /> }],
+      children: [
+        { path: "/", element: <MainPage /> },
+        { path: "/kontakt", element: <ContactPage /> },
+      ],
     },
   ]);
   return <RouterProvider router={router} />;

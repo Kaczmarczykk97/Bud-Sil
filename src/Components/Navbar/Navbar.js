@@ -22,7 +22,7 @@ function Navbar() {
           <NavLink to="/">Realizacje</NavLink>
         </li>
         <li>
-          <NavLink to="/">Kontakt</NavLink>
+          <NavLink to="/kontakt">Kontakt</NavLink>
         </li>
       </ul>
     </nav>

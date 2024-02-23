@@ -1,6 +1,7 @@
 import classes from "./Location.module.css";
 
 import { FaPhoneAlt } from "react-icons/fa";
+import { SiMinutemailer } from "react-icons/si";
 
 function Location() {
   return (
@@ -17,6 +18,14 @@ function Location() {
           <h3>Szukasz porady specjalisty?</h3>
           <h4>Nie wahaj się</h4>
           <button>Skontaktuj się z nami</button>
+          <div className={classes["contact-wrapper"]}>
+            <FaPhoneAlt className={classes["contact-wrapper--icon"]} />{" "}
+            <p>+48 123 456 789</p>
+          </div>
+          <div className={classes["contact-wrapper"]}>
+            <SiMinutemailer className={classes["contact-wrapper--icon"]} />{" "}
+            <p>bud-sil@gmail.com</p>
+          </div>
         </div>
         <div className={classes["locationMap-wrapper--map"]}>
           <iframe
