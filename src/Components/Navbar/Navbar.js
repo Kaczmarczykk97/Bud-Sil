@@ -5,6 +5,15 @@ import classes from "./Navbar.module.css";
 import logo from "../Imgs/logo_2.PNG";
 
 function Navbar() {
+  const scrollToSection = () => {
+    const section = document.getElementById("section-about");
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <nav className={classes["navbar"]}>
       <NavLink to="/" className={classes["navbar_logoContainer"]}>
@@ -16,7 +25,9 @@ function Navbar() {
       </NavLink>
       <ul>
         <li>
-          <a href="/#section-about">O Nas</a>
+          <NavLink to="/" onClick={scrollToSection}>
+            O Nas
+          </NavLink>
         </li>
         <li>
           <NavLink to="/">Realizacje</NavLink>

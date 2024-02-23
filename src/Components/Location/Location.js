@@ -18,14 +18,12 @@ function Location() {
           <h3>Szukasz porady specjalisty?</h3>
           <h4>Nie wahaj się</h4>
           <button>Skontaktuj się z nami</button>
-          <div className={classes["contact-wrapper"]}>
-            <FaPhoneAlt className={classes["contact-wrapper--icon"]} />{" "}
-            <p>+48 123 456 789</p>
-          </div>
-          <div className={classes["contact-wrapper"]}>
-            <SiMinutemailer className={classes["contact-wrapper--icon"]} />{" "}
-            <p>bud-sil@gmail.com</p>
-          </div>
+          <p>
+            <span>Pn-Pt: </span> 7:00 - 16:00
+          </p>
+          <p>
+            <span>So-N: </span> zamknięte
+          </p>
         </div>
         <div className={classes["locationMap-wrapper--map"]}>
           <iframe
