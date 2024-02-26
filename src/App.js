@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./Root";
 
 import MainPage from "./Components/MainPage/MainPage";
+import RealizationsPage from "./Components/RealizationsPage/RealizationsPage";
 import ContactPage from "./Components/ContactPage/ContactPage";
 
 import "./App.css";
@@ -14,6 +15,7 @@ function App() {
       element: <RootLayout />,
       children: [
         { path: "/", element: <MainPage /> },
+        { path: "/realizacje", element: <RealizationsPage /> },
         { path: "/kontakt", element: <ContactPage /> },
       ],
     },

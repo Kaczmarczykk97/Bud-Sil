@@ -1,0 +1,109 @@
+.realizationPageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  height: max-content;
+}
+
+.realizationPageWrapper .banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 37.5vh;
+  background: linear-gradient(rgba(6, 57, 112, 0.8), rgba(6, 57, 112, 0.8)),
+    url(../Imgs/contact_page_background.jpg) center/cover fixed no-repeat;
+  box-shadow: 0 1.25rem 1.25rem rgba(0, 0, 0, 0.6);
+}
+
+.realizationPageWrapper .banner h2 {
+  font-size: 4rem;
+  color: #fff;
+  text-align: center;
+  font-family: "Anta", sans-serif;
+  text-shadow: 2px 2px #000;
+  margin-top: 5rem;
+}
+
+.gallery-nav {
+  width: 100%;
+  margin-top: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.gallery-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2.5rem;
+  list-style: none;
+}
+
+.gallery-nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-nav ul li button {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border: none;
+  box-shadow: 0 0.5rem 0 transparent;
+  transition: all 0.3s;
+  color: #fff;
+  font-family: "Anta", sans-serif;
+  text-shadow: 2px 2px #000;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.gallery-nav ul li button::after {
+  content: "";
+  display: inline-block;
+  height: 5px;
+  background-color: #be2540;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.gallery-nav ul li button:hover::after {
+  width: 100%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(20rem, 30rem));
+  grid-auto-rows: dense;
+  margin: 2.5rem auto 5rem auto;
+  gap: 2rem 1rem;
+}
+
+.galleryImg-container {
+  width: 100%;
+  grid-row: span 2;
+}
+
+.galleryImg-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 0.3s;
+  filter: brightness(75%);
+}
+
+.galleryImg-container img:hover {
+  transform: translateY(-0.6rem);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.4);
+  filter: brightness(100%);
+}
