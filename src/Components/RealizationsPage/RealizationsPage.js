@@ -5,6 +5,8 @@ import classes from "./RealizationsPage.module.css";
 
 import gallery_imgs from "../Imgs/gallery/gallery-imgs";
 
+import ModalGallery from "../ModalGallery/ModalGallery";
+
 function RealizationsPage() {
   const [filteredGallery, setFilteredGallery] = useState(gallery_imgs);
 
@@ -12,6 +14,9 @@ function RealizationsPage() {
   const [heatPumpBtnActive, setHeatPumpBtnActive] = useState(false);
   const [bathroomBtnActive, setBathroomBtnActive] = useState(false);
   const [coCwuBtnActive, setCoCwuBtnActive] = useState(false);
+
+  const [clickedImg, setClickedImg] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(null);
 
   function filterGalleryByCategoryHandler(e) {
     if (
@@ -64,6 +69,46 @@ function RealizationsPage() {
     }
   }
 
+  const handleClick = (item, index) => {
+    setCurrentIndex(index);
+    setClickedImg(item.img);
+  };
+
+  const handelRotationRight = () => {
+    const totalLength = filteredGallery.length;
+    console.log(totalLength);
+    if (currentIndex + 1 >= totalLength) {
+      setCurrentIndex(0);
+      const newUrl = filteredGallery[0].img;
+      setClickedImg(newUrl);
+      return;
+    }
+    const newIndex = currentIndex + 1;
+    const newUrl = filteredGallery.filter((item) => {
+      return filteredGallery.indexOf(item) === newIndex;
+    });
+    const newItem = newUrl[0].img;
+    setClickedImg(newItem);
+    setCurrentIndex(newIndex);
+  };
+
+  const handelRotationLeft = () => {
+    const totalLength = filteredGallery.length;
+    if (currentIndex === 0) {
+      setCurrentIndex(totalLength - 1);
+      const newUrl = filteredGallery[totalLength - 1].img;
+      setClickedImg(newUrl);
+      return;
+    }
+    const newIndex = currentIndex - 1;
+    const newUrl = filteredGallery.filter((item) => {
+      return filteredGallery.indexOf(item) === newIndex;
+    });
+    const newItem = newUrl[0].img;
+    setClickedImg(newItem);
+    setCurrentIndex(newIndex);
+  };
+
   return (
     <div className={classes["realizationPageWrapper"]}>
       <div className={classes["banner"]}>
@@ -113,11 +158,23 @@ function RealizationsPage() {
         {filteredGallery.map((img, i) => {
           return (
             <div className={classes["galleryImg-container"]} key={i}>
-              <img src={img.img} alt={img.category} />
+              <img
+                src={img.img}
+                alt={img.category}
+                onClick={() => handleClick(img, i)}
+              />
             </div>
           );
         })}
       </div>
+      {clickedImg && (
+        <ModalGallery
+          clickedImg={clickedImg}
+          handelRotationRight={handelRotationRight}
+          setClickedImg={setClickedImg}
+          handelRotationLeft={handelRotationLeft}
+        />
+      )}
     </div>
   );
 }
