@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+
 import classes from "./Location.module.css";
 
 import { FaPhoneAlt } from "react-icons/fa";
@@ -18,7 +20,9 @@ function Location() {
           <FaPhoneAlt className={classes["locationMap-wrapper--phoneIcon"]} />
           <h3>Szukasz porady specjalisty?</h3>
           <h4>Nie wahaj się</h4>
-          <button>Skontaktuj się z nami</button>
+          <NavLink to="/kontakt" className={classes["text-box--btn"]}>
+            Skontaktuj się z nami
+          </NavLink>
           <p>
             <span>Pn-Pt: </span> 7:00 - 16:00
           </p>

@@ -6,6 +6,7 @@ import classes from "./RealizationsPage.module.css";
 import gallery_imgs from "../Imgs/gallery/gallery-imgs";
 
 import ModalGallery from "../ModalGallery/ModalGallery";
+import ArrowScrollTop from "../ArrowScrollTop/ArrowScrollTop";
 
 function RealizationsPage() {
   const [filteredGallery, setFilteredGallery] = useState(gallery_imgs);
@@ -175,6 +176,7 @@ function RealizationsPage() {
           handelRotationLeft={handelRotationLeft}
         />
       )}
+      <ArrowScrollTop />
     </div>
   );
 }

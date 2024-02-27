@@ -69,23 +69,25 @@ header .text-box p {
   text-align: center;
 }
 
-.text-box button {
+.text-box .text-box--btn {
   margin-top: 2.75rem;
+  padding: 1rem 2.5rem;
+  background-color: #ffff4d;
+  cursor: pointer;
+  transition: all 0.4s;
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 1px;
   font-family: "Anta", sans-serif;
-  padding: 1rem 2.5rem;
   color: #000;
-  background-color: #ffff4d;
-  cursor: pointer;
-  transition: all 0.4s;
+  text-decoration: none;
+  text-align: center;
 }
 
-.text-box button:hover {
-  font-size: 2.25rem;
+.text-box .text-box--btn:hover {
   padding: 1.25rem 3rem;
   box-shadow: 0 1rem 2rem #000;
+  font-size: 2.25rem;
 }
 
 .header_slider {

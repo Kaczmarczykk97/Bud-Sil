@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 import classes from "./Header.module.css";
 
@@ -32,7 +33,9 @@ function Header() {
         </h1>
         <h2>ZUH. Silarski W.</h2>
         <p>"Z nami będziesz miał ciepło za rozsądne pieniądze."</p>
-        <button>Kontakt</button>
+        <NavLink to="/kontakt" className={classes["text-box--btn"]}>
+          Kontakt
+        </NavLink>
       </div>
     </header>
   );
