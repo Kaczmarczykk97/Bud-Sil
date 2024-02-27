@@ -1,3 +1,4 @@
+import React from "react";
 import Header from "../Header/Header";
 import Companies from "../Companies/Companies";
 import AboutUs from "../About/AboutUs";

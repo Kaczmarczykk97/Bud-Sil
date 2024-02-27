@@ -1,3 +1,4 @@
+import React from "react";
 import classes from "./ContactPage.module.css";
 
 import { FaPhoneAlt, FaHome, FaBook } from "react-icons/fa";

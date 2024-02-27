@@ -1,3 +1,4 @@
+import React from "react";
 import classes from "./ArrowScrollTop.module.css";
 
 import { FaArrowUp } from "react-icons/fa";

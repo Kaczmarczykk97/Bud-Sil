@@ -1,3 +1,4 @@
+import React from "react";
 import classes from "./Companies.module.css";
 
 import logo_1 from "../Imgs/logo_Brötje_Heizung.png";

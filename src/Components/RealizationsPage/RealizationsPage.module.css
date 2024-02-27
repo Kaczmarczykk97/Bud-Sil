@@ -76,8 +76,13 @@
   transition: all 0.3s;
 }
 
-.gallery-nav ul li button:hover::after {
+.gallery-nav ul li button:hover::after,
+.gallery-nav ul li button.active::after {
   width: 100%;
+}
+
+.gallery-nav ul li button:hover::after {
+  background-color: rgba(190, 37, 64, 0.6);
 }
 
 .gallery {
@@ -86,6 +91,7 @@
   grid-auto-rows: dense;
   margin: 2.5rem auto 5rem auto;
   gap: 2rem 1rem;
+  padding: 0 2.5rem;
 }
 
 .galleryImg-container {

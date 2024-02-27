@@ -1,3 +1,4 @@
+import React from "react";
 import classes from "./Location.module.css";
 
 import { FaPhoneAlt } from "react-icons/fa";

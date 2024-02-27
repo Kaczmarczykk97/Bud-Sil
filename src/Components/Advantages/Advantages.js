@@ -1,3 +1,4 @@
+import React from "react";
 import classes from "./Advantages.module.css";
 
 import { GiReceiveMoney } from "react-icons/gi";
