@@ -36,20 +36,69 @@
 
 .companies_imgs--wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   align-items: center;
   justify-content: center;
   width: 100%;
-  gap: 5rem;
+  gap: 1.9rem;
+  padding: 0 1.5rem;
 }
 
 .companies_imgs--wrapper img {
-  width: 100%;
+  width: 90%;
   filter: grayscale(100%);
   transition: all 0.3s;
+  margin: 0 auto;
 }
 
 .companies_imgs--wrapper img:hover {
   filter: grayscale(0);
   transform: translateY(-0.5rem);
+}
+
+@media (max-width: 900px) {
+  .companiesBox {
+    padding: 2.5rem 0 4.5rem 0;
+  }
+
+  .companiesBox .headingBox {
+    padding: 1.25rem 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .companiesBox .headingBox h2 {
+    font-size: 3.25rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .companies_imgs--wrapper img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .companiesBox .headingBox {
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .companiesBox .headingBox h2 {
+    font-size: 2.75rem;
+  }
+
+  .companies_imgs--wrapper img:last-child {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+}
+
+@media (max-width: 600px) {
+  .companiesBox .headingBox {
+    margin-bottom: 1rem;
+  }
+
+  .companiesBox .headingBox h2 {
+    font-size: 2.25rem;
+  }
 }
