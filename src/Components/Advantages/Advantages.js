@@ -8,21 +8,25 @@ import { FaRegHandshake } from "react-icons/fa6";
 function Advantages() {
   return (
     <div className={classes["advantagesBox"]}>
-      <div className={classes["advantage"]}>
-        <GiReceiveMoney className={classes["advantage-icon"]} />
-        <p>Oszczędność na rachunkach</p>
+      <div className={classes["advantages-wrapper"]}>
+        <div className={classes["advantage"]}>
+          <GiReceiveMoney className={classes["advantage-icon"]} />
+          <p>Oszczędność na rachunkach</p>
+        </div>
+        <div className={classes["advantage"]}>
+          <RiLightbulbFlashFill className={classes["advantage-icon"]} />
+          <p>Niezależność energetyczna</p>
+        </div>
       </div>
-      <div className={classes["advantage"]}>
-        <RiLightbulbFlashFill className={classes["advantage-icon"]} />
-        <p>Niezależność energetyczna</p>
-      </div>
-      <div className={classes["advantage"]}>
-        <RiPlantLine className={classes["advantage-icon"]} />
-        <p>W zgodzie ze środowiskiem</p>
-      </div>
-      <div className={classes["advantage"]}>
-        <FaRegHandshake className={classes["advantage-icon"]} />
-        <p>Dofinansowania na pompy ciepła</p>
+      <div className={classes["advantages-wrapper"]}>
+        <div className={classes["advantage"]}>
+          <RiPlantLine className={classes["advantage-icon"]} />
+          <p>W zgodzie ze środowiskiem</p>
+        </div>
+        <div className={classes["advantage"]}>
+          <FaRegHandshake className={classes["advantage-icon"]} />
+          <p>Dofinansowania na pompy ciepła</p>
+        </div>
       </div>
     </div>
   );
