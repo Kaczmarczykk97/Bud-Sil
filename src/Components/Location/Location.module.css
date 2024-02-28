@@ -42,16 +42,17 @@
 
 .locationMap-wrapper--phoneIcon {
   position: absolute;
-  top: 15rem;
-  left: 2rem;
+  top: 3rem;
+  left: 1rem;
   font-size: 10rem;
-  transform: rotate(35deg);
+  transform: rotate(75deg);
   color: rgb(0, 128, 0, 0.6);
 }
 
 .locationMap-wrapper--textbox {
   display: flex;
   flex-direction: column;
+  margin-right: 10rem;
 }
 
 .locationMap-wrapper--textbox h3,
@@ -102,4 +103,198 @@
   padding: 1.25rem 3rem;
   box-shadow: 0 1rem 2rem #000;
   font-size: 2.25rem;
+}
+
+.locationMap-wrapper--map {
+  width: 55rem;
+  height: 40rem;
+}
+
+@media (max-width: 1200px) {
+  .locationBox .headingBox {
+    margin-bottom: 3rem;
+  }
+
+  .locationMap-wrapper--textbox {
+    margin-right: 7.5rem;
+  }
+
+  .locationMap-wrapper--textbox h3 {
+    font-size: 3rem;
+  }
+
+  .locationMap-wrapper--textbox h4 {
+    font-size: 2.5rem;
+  }
+
+  .locationMap-wrapper--textbox p {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .locationMap-wrapper--phoneIcon {
+    font-size: 7.5rem;
+  }
+
+  .locationMap-wrapper--textbox {
+    margin-right: 5rem;
+  }
+
+  .locationMap-wrapper--textbox h3 {
+    font-size: 2.45rem;
+  }
+
+  .locationMap-wrapper--textbox h4 {
+    font-size: 2.25rem;
+  }
+
+  .locationMap-wrapper--textbox p {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .locationMap-wrapper--map {
+    width: 45rem;
+    height: 40rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .locationBox .headingBox {
+    padding: 1.25rem 2rem;
+  }
+
+  .locationBox .headingBox h2 {
+    font-size: 3.5rem;
+  }
+
+  .locationMap-wrapper {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .locationMap-wrapper--phoneIcon {
+    font-size: 5rem;
+  }
+
+  .locationMap-wrapper--textbox h3 {
+    font-size: 2.25rem;
+  }
+
+  .locationMap-wrapper--textbox h4 {
+    font-size: 2.1rem;
+  }
+
+  .locationMap-wrapper--textbox p {
+    font-size: 1.55rem;
+  }
+
+  .locationMap-wrapper--map {
+    width: 40rem;
+    height: 37.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .locationMap-wrapper--phoneIcon {
+    font-size: 3.5rem;
+  }
+
+  .locationMap-wrapper--map {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  .text-box .text-box--btn {
+    padding: 0.75rem 2rem;
+    font-size: 1.75rem;
+  }
+
+  .text-box .text-box--btn:hover {
+    padding: 1rem 2.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .locationMap-wrapper--textbox h3 {
+    margin-bottom: 0.5rem;
+    font-size: 2.75rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .locationBox .headingBox {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .locationBox .headingBox h2 {
+    font-size: 3rem;
+  }
+
+  .locationMap-wrapper--textbox {
+    margin-right: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .locationMap-wrapper--textbox {
+    margin-right: 1.25rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .locationMap-wrapper {
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 6.5rem 2.5rem;
+  }
+
+  .locationMap-wrapper--textbox {
+    margin-right: 0;
+  }
+
+  .text-box .text-box--btn {
+    margin: 2.5rem 2.5rem 1.5rem 2.5rem;
+  }
+
+  .locationMap-wrapper--textbox p {
+    margin: 0 auto;
+  }
+
+  .locationMap-wrapper--map {
+    width: 100%;
+    height: 35rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .locationBox .headingBox {
+    margin-bottom: 0.75rem;
+  }
+
+  .locationBox .headingBox h2 {
+    font-size: 2.75rem;
+  }
+
+  .locationMap-wrapper {
+    gap: 1.5rem;
+    padding: 4.5rem 1.5rem;
+  }
+
+  .locationMap-wrapper--phoneIcon {
+    display: none;
+  }
+
+  .locationMap-wrapper--textbox h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .locationMap-wrapper--textbox h3 {
+    font-size: 2.25rem;
+  }
 }
