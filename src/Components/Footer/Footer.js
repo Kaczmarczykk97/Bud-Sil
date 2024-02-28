@@ -1,7 +1,6 @@
 import React from "react";
 import classes from "./Footer.module.css";
 
-// import logo from "../Imgs/logo_2.PNG";
 import logo from "../Imgs/logo_1.png";
 import footer_img from "../Imgs/footer_img.png";
 
