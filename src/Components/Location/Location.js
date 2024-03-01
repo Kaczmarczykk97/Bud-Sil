@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import classes from "./Location.module.css";
 
 import { FaPhoneAlt } from "react-icons/fa";
-import { SiMinutemailer } from "react-icons/si";
+
 
 function Location() {
   return (
