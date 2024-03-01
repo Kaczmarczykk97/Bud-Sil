@@ -107,43 +107,6 @@ header .text-box p {
   background-size: cover;
 }
 
-/* header .text-box {
-  margin-top: 7.5rem;
-  width: 60rem;
-  height: 30rem;
-  padding: 2rem 1rem;
-}
-
-header .text-box::before,
-header .text-box::after {
-  width: 30rem;
-  height: 3rem;
-}
-
-header .text-box h1,
-header .text-box h1 span {
-  font-size: 10rem;
-}
-
-header .text-box h2 {
-  font-size: 2.5rem;
-}
-
-header .text-box p {
-  font-size: 1.75rem;
-}
-
-.text-box .text-box--btn {
-  margin-top: 2.75rem;
-  padding: 1rem 2.5rem;
-  font-size: 2rem;
-}
-
-.text-box .text-box--btn:hover {
-  padding: 1.25rem 3rem;
-  font-size: 2.25rem;
-} */
-
 @media (max-width: 750px) {
   header .text-box {
     width: 55rem;
