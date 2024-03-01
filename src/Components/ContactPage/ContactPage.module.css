@@ -5,7 +5,7 @@
   justify-content: center;
   gap: 1.5rem;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(rgba(6, 57, 112, 0.8), rgba(6, 57, 112, 0.8)),
     url(../Imgs/contact_page_background.jpg) center/cover fixed no-repeat;
 }
@@ -113,4 +113,122 @@
 .contact-wrapper--formbox form button:active {
   transform: translateY(1px);
   box-shadow: 0 0 0 rgb(0, 0, 0, 0.6);
+}
+
+@media (max-width: 800px) {
+  .contactPage-box {
+    gap: 2rem;
+  }
+
+  .contact-wrapper--textbox {
+    min-width: auto;
+    width: max-content;
+  }
+
+  .contact-wrapper--textbox .contact-wrapper p {
+    font-size: 1.75rem;
+  }
+
+  .contact-wrapper--formbox {
+    min-width: 36.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .contactPageWrapper {
+    gap: 2.5rem;
+  }
+
+  .contactPage-box {
+    gap: 1.25rem;
+  }
+
+  .contact-wrapper--textbox .contact-wrapper p {
+    font-size: 1.5rem;
+  }
+
+  .contact-wrapper--textbox .contact-wrapper {
+    gap: 1rem;
+  }
+
+  .contact-wrapper--textbox .contact-wrapper .contact-wrapper--icon {
+    font-size: 1.75rem;
+  }
+
+  .contact-wrapper--formbox {
+    min-width: 32.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contactPageWrapper h2 {
+    margin-top: 12rem;
+  }
+
+  .contactPage-box {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5rem;
+    gap: 1.75rem;
+  }
+
+  .contact-wrapper--textbox {
+    gap: 1rem;
+    padding: 2rem 4rem;
+  }
+
+  .contact-wrapper--textbox .contact-wrapper {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .contact-wrapper--textbox .contact-wrapper p {
+    font-size: 1.75rem;
+  }
+
+  .contact-wrapper--textbox .contact-wrapper {
+    gap: 1.5rem;
+  }
+
+  .contact-wrapper--textbox .contact-wrapper .contact-wrapper--icon {
+    font-size: 2.25rem;
+  }
+
+  .contact-wrapper--formbox {
+    min-width: 45rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .contactPageWrapper h2 {
+    font-size: 3.25rem;
+  }
+
+  .contact-wrapper--formbox {
+    min-width: 40rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact-wrapper--textbox {
+    padding: 1.25rem 2.25rem;
+  }
+
+  .contact-wrapper--formbox {
+    min-width: 35rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .contactPageWrapper h2 {
+    font-size: 3rem;
+  }
+
+  .contact-wrapper--textbox {
+    padding: 1rem 2rem;
+  }
+
+  .contact-wrapper--formbox {
+    min-width: 32.5rem;
+  }
 }
