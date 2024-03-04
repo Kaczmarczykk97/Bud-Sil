@@ -44,3 +44,97 @@
   box-shadow: 0 0 2rem #063970;
   transform: translateY(-0.4rem);
 }
+
+/***********MOBILE******************/
+
+.mobileIcon {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  color: #fff;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.mobileIcon:hover {
+  transform: scale(1.2);
+}
+
+.navbar ul.closedMobileMenu {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .navbar {
+    padding: 1rem 1.75rem;
+  }
+
+  .navbar_logoContainer {
+    height: 4.5rem;
+  }
+
+  .navbar ul li a {
+    font-size: 1.85rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .navbar_logoContainer {
+    height: 4rem;
+  }
+
+  .navbar ul {
+    gap: 1.25rem;
+  }
+
+  .navbar ul li a {
+    font-size: 1.75rem;
+    padding: 0.4rem 1.4rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .navbar_logoContainer {
+    height: 5rem;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .navbar ul li a {
+    font-size: 2.25rem;
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 0.5rem 1.75rem;
+    box-shadow: none;
+    text-shadow: 0 0 1rem #fff;
+  }
+
+  .navbar ul li a:hover {
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 0 2rem #fff;
+    transform: translateY(-0.4rem);
+  }
+
+  .mobileIcon {
+    display: inline-block;
+  }
+}
